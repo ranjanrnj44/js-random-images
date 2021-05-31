@@ -1,0 +1,78 @@
+/*universal selector start*/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1200px;
+    margin: 0px auto;
+}
+/*universal selector end*/
+h2{
+    color: black;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+article{
+    background-color: grey;
+    padding: 40px;
+    border-radius: 10px;
+}
+section{
+    max-width: 500px;
+}
+section img{
+    height: 300px;
+    width: 500px;
+}
+section p{
+    font-size: 18px;
+}
+section #items{
+    margin-left: 20px;
+}
+.next {
+    width: 500px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px 0px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 10px;
+    transition: all .4s ease-in-out;
+}
+.next:hover{
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+}
+.clr {
+    background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+.btn-hover.color-2 {
+    background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+#next_icon{
+    animation-name: icon;
+    animation-duration: 1s;
+    transition: transform 0.3s;
+    margin-left: 30px;
+    color:black;
+    font-size: 23px;
+}
+@keyframes icon{
+    0% {margin-left: 0px; color: white}
+    50% {margin-left: 200px}
+    100% {margin-left: 30px; transform: rotate(360deg); color: black;}
+}
+img{
+    border-radius: 10px;
+}
